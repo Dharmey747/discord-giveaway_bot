@@ -1,7 +1,7 @@
 {
   "name": "tic-tac-toe",
   "version": "1.0.0",
-  "description": "simple tic tac toe discord bot ",
+  "description": "simple giveaway discord bot ",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,8 +9,7 @@
   "keywords": [
     "discord",
     "bot",
-    "discord.js",
-    "tic-tac-toe"
+    "discord.js"
   ],
   "author": "dharmey",
   "license": "MIT",
