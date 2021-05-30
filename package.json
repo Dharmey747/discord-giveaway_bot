@@ -13,6 +13,10 @@
   ],
   "author": "dharmey",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dharmey747/discord-giveaway_bot.git"
+  },
   "dependencies": {
     "discord.js": "github:monbrey/discord.js#message-components"
   }
