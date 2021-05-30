@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client({intents: Discord.Intents.NON_PRIVILEGED});
 
+const giveawayCommand = '!giveaway'
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.username}#${client.user.discriminator}!`)
@@ -9,7 +10,7 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content.startsWith("!giveaway")) {
         message.delete();
-        message.channel.send(`:tada: Pick a box for a chance to win **${message.content.split('!giveaway ')[1]}**!`, {
+        message.channel.send(`:tada: Pick a box for a chance to win **${message.content.split(`${giveawayCommand} `)[1]}**!`, {
             components: [
                 {type: 1, components: [
                         {type: 2, label: "-", style: 2, custom_id: "ttt11"},
