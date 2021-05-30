@@ -3,7 +3,7 @@ const client = new Discord.Client({intents: Discord.Intents.NON_PRIVILEGED});
 
 
 client.on('ready', () => {
-    console.log('ready.')
+    console.log(`Logged in as ${client.user.username}#${client.user.discriminator}!`)
 });
 
 client.on('message', message => {
