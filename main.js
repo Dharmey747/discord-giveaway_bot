@@ -8,7 +8,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content.startsWith("!giveaway")) {
+    if (message.content.startsWith(giveawayCommand)) {
         message.delete();
         message.channel.send(`:tada: Pick a box for a chance to win **${message.content.split(`${giveawayCommand} `)[1]}**!`, {
             components: [
